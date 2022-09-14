@@ -85,7 +85,7 @@ const Feed = () => {
         </Typography>
 
         <Videos
-        videos={[videos]}
+        videos={videos}
         />
       </Box>
 
