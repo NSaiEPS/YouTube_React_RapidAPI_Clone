@@ -10,7 +10,7 @@ const Sidebar = ({selectedCategory,setselectedCategory}) => {
     direction='row'
 
     sx={{
-        overflowY:'auto',
+        overflowY:'scroll',
         height:{
             sx:'auto',
             md:'95%'
