@@ -1,6 +1,8 @@
 import { Paper,IconButton } from "@mui/material"
 import {Search} from '@mui/icons-material'
+import { useState } from "react"
 const SearchBar = () => {
+    const [searchTerm, setsearchTerm] = useState('')
   return (
     <Paper
     component='form'
@@ -19,8 +21,10 @@ const SearchBar = () => {
         <input 
         className="search-bar"
         placeholder="Search"
-        value=""        
-        onChange={()=>{}}
+        value={searchTerm}   
+        onChange={(e)=>{
+            setsearchTerm(e.target.value)
+        }}
         />
         <IconButton
         type="submit"

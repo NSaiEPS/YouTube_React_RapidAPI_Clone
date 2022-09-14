@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { demoThumbnailUrl,demoVideoTitle, demoChannelUrl,demoChannelTitle,demoVideoUrl, demoProfilePicture } from "../utils/constants"
 
 
-const ChannelCard = ({channelDetail}) => {
+const ChannelCard = ({channelDetail,marginTop}) => {
   return (
     <Box
     sx={{
@@ -19,7 +19,8 @@ width:{
   md:'320px'
 },
 height:'326px',
-margin:'auto'
+margin:'auto',
+marginTop
     }}
     >
 
